@@ -7,6 +7,16 @@ public class User {
 	private static int idCounter = 0;
 	
 	public User() {
-		// TODO Auto-generated constructor stub
+		id = idCounter;
+		idCounter++;
+	}
+	
+	public User(String firstName, String lastName){
+		this.FirstName = firstName;
+		this.LastName = lastName;
+	}
+	
+	public String toString(){
+		return "User: " + FirstName + " " + LastName + " | ID: " + id + " | ";
 	}
 }

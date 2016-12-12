@@ -2,9 +2,10 @@ package bank;
 
 public class Account {
 	private User owner;
+	private Double balance;
 	
 	public Account() {
-		// TODO Auto-generated constructor stub
+		balance = 0.0;
 	}
 
 	public User getOwner() {
@@ -13,5 +14,9 @@ public class Account {
 
 	public void setOwner(User owner) {
 		this.owner = owner;
+	}
+	
+	public String toString(){
+		return owner.toString() + "Balance: " + balance + " | ";
 	}
 }
