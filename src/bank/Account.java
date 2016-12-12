@@ -7,6 +7,10 @@ public class Account {
 	public Account() {
 		balance = 0.0;
 	}
+	
+	public Account(User owner){
+		this.owner = owner;
+	}
 
 	public User getOwner() {
 		return owner;
@@ -18,5 +22,26 @@ public class Account {
 	
 	public String toString(){
 		return owner.toString() + "Balance: " + balance + " | ";
+	}
+	
+	public void addFunds(double value){
+		this.balance += value;
+	}
+	
+	public void removeFunds(double value){
+		//TODO
+		/*
+		if((this.balance -= value) < 0.0){
+			this.balance = 0.0;
+		}
+		*/
+	}
+	
+	public double getBalance(){
+		return balance;
+	}
+	
+	public double getBalanceDollars(){
+		return (getBalance())*(1.064164);
 	}
 }
