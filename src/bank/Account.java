@@ -9,6 +9,7 @@ public class Account {
 	}
 	
 	public Account(User owner){
+		balance = 0.0;
 		this.owner = owner;
 	}
 

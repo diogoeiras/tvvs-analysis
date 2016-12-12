@@ -2,7 +2,7 @@ package bank;
 import java.util.ArrayList;
 
 public class Bank {
-	private ArrayList<Account> accounts;
+	private ArrayList<Account> accounts = new ArrayList<>();
 
 	public ArrayList<Account> getAccounts() {
 		return accounts;
