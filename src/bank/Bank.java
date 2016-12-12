@@ -3,10 +3,6 @@ import java.util.ArrayList;
 
 public class Bank {
 	private ArrayList<Account> accounts;
-	
-	public Bank() {
-		// TODO Auto-generated constructor stub
-	}
 
 	public ArrayList<Account> getAccounts() {
 		return accounts;
